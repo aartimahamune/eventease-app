@@ -1,0 +1,66 @@
+.visitorCard {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  background: linear-gradient(to bottom right, #ffffff, #f6f7fb);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #3e3e3e;
+}
+
+.label {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #333;
+}
+
+.icon {
+  color: #8b0000;
+  margin-right: 6px;
+  vertical-align: middle;
+  font-size: 1.2rem;
+}
+
+.checkInBtn {
+  background-color: #8b0000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.45rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.checkInBtn:hover {
+  background-color: #a30000;
+}
+
+.linkBtn {
+  background-color: transparent;
+  border: 1px solid #8b0000;
+  color: #8b0000;
+  font-weight: 500;
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.linkBtn:hover {
+  background-color: #8b0000;
+  color: white;
+}
+
+.welcomeMsg {
+  font-size: 1rem;
+}
+
+.subheading {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
