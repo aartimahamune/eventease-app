@@ -42,41 +42,41 @@ function App() {
     setEvents(eventsNames);
   };
 
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route
-          path="/event"
-          element={
-            <Event
-              addEvent={addEvent}
-              addOrganizer={addOrganizer}
-              setAddEvent={setAddEvent}
-              setAddOrganizer={setAddOrganizer}
-              handleEvents={handleEvents}
-              events={events}
-              handleDelete={handleDelete}
-            />
-          }
-        />
-        <Route
-          path="/"
-          element={
-            <Visitor
-              handleCheckIn={handleCheckIn}
-              setName={setName}
-              name={name}
-              addvisitor={addvisitor}
-              currentUser={currentUser}
-              events={events}
-            />
-          }
-        />
-      </Routes>
-      <ToastContainer position="top-center" autoClose={4000} />
+ return (
+  <BrowserRouter basename={import.meta.env.DEV ? "/" : "/eventease-app/"}>
+    <Routes>
+      <Route
+        path="/event"
+        element={
+          <Event
+            addEvent={addEvent}
+            addOrganizer={addOrganizer}
+            setAddEvent={setAddEvent}
+            setAddOrganizer={setAddOrganizer}
+            handleEvents={handleEvents}
+            events={events}
+            handleDelete={handleDelete}
+          />
+        }
+      />
+      <Route
+        path="/"
+        element={
+          <Visitor
+            handleCheckIn={handleCheckIn}
+            setName={setName}
+            name={name}
+            addvisitor={addvisitor}
+            currentUser={currentUser}
+            events={events}
+          />
+        }
+      />
+    </Routes>
+    <ToastContainer position="top-center" autoClose={4000} />
+  </BrowserRouter>
+);
 
-    </BrowserRouter>
-  );
 }
 
 export default App;
